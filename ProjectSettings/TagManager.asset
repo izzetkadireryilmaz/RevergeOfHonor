@@ -17,6 +17,9 @@ TagManager:
   - VillageGuardion
   - Old
   - KingVillageTeleport
+  - KingVillager
+  - NewGuardion
+  - OldGuardionGate
   layers:
   - Default
   - TransparentFX
