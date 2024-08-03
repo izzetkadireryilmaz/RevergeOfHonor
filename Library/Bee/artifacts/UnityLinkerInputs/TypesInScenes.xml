@@ -1,6 +1,7 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="CameraController" preserve="nothing"/>
+		<type fullname="MainTaskInteraction" preserve="nothing"/>
 		<type fullname="PlayerInteraction" preserve="nothing"/>
 		<type fullname="PlayerMovement" preserve="nothing"/>
 	</assembly>
@@ -11,6 +12,7 @@
 		<type fullname="TMPro.TMP_StyleSheet" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine">
+		<type fullname="UnityEditor.Animations.AnimatorController" preserve="nothing"/>
 		<type fullname="UnityEditor.AudioManager" preserve="nothing"/>
 		<type fullname="UnityEditor.InputManager" preserve="nothing"/>
 		<type fullname="UnityEditor.MonoManager" preserve="nothing"/>
@@ -21,8 +23,11 @@
 		<type fullname="UnityEditor.TagManager" preserve="nothing"/>
 		<type fullname="UnityEditor.TimeManager" preserve="nothing"/>
 		<type fullname="UnityEditor.VFXManager" preserve="nothing"/>
+		<type fullname="UnityEngine.AnimationClip" preserve="nothing"/>
+		<type fullname="UnityEngine.Animator" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioListener" preserve="nothing"/>
+		<type fullname="UnityEngine.Avatar" preserve="nothing"/>
 		<type fullname="UnityEngine.Behaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.BoxCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.Camera" preserve="nothing"/>
@@ -43,6 +48,7 @@
 		<type fullname="UnityEngine.MeshFilter" preserve="nothing"/>
 		<type fullname="UnityEngine.MeshRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.MonoBehaviour" preserve="nothing"/>
+		<type fullname="UnityEngine.Motion" preserve="nothing"/>
 		<type fullname="UnityEngine.Object" preserve="nothing"/>
 		<type fullname="UnityEngine.ParticleSystem" preserve="nothing"/>
 		<type fullname="UnityEngine.ParticleSystemRenderer" preserve="nothing"/>
@@ -51,7 +57,9 @@
 		<type fullname="UnityEngine.Renderer" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.GraphicsSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.RenderSettings" preserve="nothing"/>
+		<type fullname="UnityEngine.RuntimeAnimatorController" preserve="nothing"/>
 		<type fullname="UnityEngine.Shader" preserve="nothing"/>
+		<type fullname="UnityEngine.SkinnedMeshRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.Sprite" preserve="nothing"/>
 		<type fullname="UnityEngine.TextAsset" preserve="nothing"/>
 		<type fullname="UnityEngine.Texture" preserve="nothing"/>
@@ -63,6 +71,7 @@
 		<type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.GraphicRaycaster" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.Image" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.RawImage" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Text" preserve="nothing"/>
 	</assembly>

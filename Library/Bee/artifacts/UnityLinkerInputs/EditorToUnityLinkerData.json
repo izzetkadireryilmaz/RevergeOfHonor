@@ -57,6 +57,13 @@
             ]
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "MainTaskInteraction",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "MultiplayerManager",
             "fullManagedTypeName": "",
@@ -160,6 +167,15 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AnimatorController",
+            "fullManagedTypeName": "UnityEditor.Animations.AnimatorController",
+            "moduleName": "Animation",
+            "usedInScenes": [
+                "Assets/Scenes/GameScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "AudioManager",
             "fullManagedTypeName": "UnityEditor.AudioManager",
             "moduleName": "Audio",
@@ -232,6 +248,24 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AnimationClip",
+            "fullManagedTypeName": "UnityEngine.AnimationClip",
+            "moduleName": "Animation",
+            "usedInScenes": [
+                "Assets/Scenes/GameScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Animator",
+            "fullManagedTypeName": "UnityEngine.Animator",
+            "moduleName": "Animation",
+            "usedInScenes": [
+                "Assets/Scenes/GameScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "AudioBehaviour",
             "fullManagedTypeName": "UnityEngine.AudioBehaviour",
             "moduleName": "Audio",
@@ -244,6 +278,15 @@
             "nativeClass": "AudioListener",
             "fullManagedTypeName": "UnityEngine.AudioListener",
             "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Scenes/GameScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Avatar",
+            "fullManagedTypeName": "UnityEngine.Avatar",
+            "moduleName": "Animation",
             "usedInScenes": [
                 "Assets/Scenes/GameScene.unity"
             ]
@@ -444,6 +487,15 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Motion",
+            "fullManagedTypeName": "UnityEngine.Motion",
+            "moduleName": "Animation",
+            "usedInScenes": [
+                "Assets/Scenes/GameScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "Object",
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
@@ -512,8 +564,26 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "RuntimeAnimatorController",
+            "fullManagedTypeName": "UnityEngine.RuntimeAnimatorController",
+            "moduleName": "Animation",
+            "usedInScenes": [
+                "Assets/Scenes/GameScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "Shader",
             "fullManagedTypeName": "UnityEngine.Shader",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/GameScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "SkinnedMeshRenderer",
+            "fullManagedTypeName": "UnityEngine.SkinnedMeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/GameScene.unity"
@@ -524,7 +594,9 @@
             "nativeClass": "Sprite",
             "fullManagedTypeName": "UnityEngine.Sprite",
             "moduleName": "Core",
-            "usedInScenes": []
+            "usedInScenes": [
+                "Assets/Scenes/GameScene.unity"
+            ]
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
@@ -573,6 +645,13 @@
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.GraphicRaycaster",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.Image",
             "moduleName": "",
             "usedInScenes": []
         },

@@ -6,12 +6,15 @@ using UnityEngine.UIElements;
 
 public class MainTaskInteraction : MonoBehaviour
 {
+    public Canvas KillCanvas;
+    public Canvas ForgiveCanvas;
     public Text GoldText;
     public GameObject RoadSign;
     public Text TakeTheMainTaskText;
     public Text TeleportText;
     public Text BribeText;
     public Text GateText;
+    public Text KingText;
     public Text MainTask1;
     public Text MainTask2;
     public Text MainTask3;
@@ -25,6 +28,8 @@ public class MainTaskInteraction : MonoBehaviour
     public Text MainTask11;
     public Text MainTask12;
     public Text MainTask13;
+    public Text MainTask14;
+    public Text MainTask15;
     public GameObject MainTask1Panel;
     public GameObject MainTask2Panel;
     public GameObject MainTask4Panel;
@@ -35,10 +40,13 @@ public class MainTaskInteraction : MonoBehaviour
     public GameObject MainTask9Panel;
     public GameObject MainTask10Panel;
     public GameObject MainTask12Panel;
+    public GameObject MainTask13Panel;
+    public GameObject MainTask14Panel;
     private int currentTask = 0;
     public GameObject Gate;
     public GameObject OldGuardionG;
     public GameObject NewGuardion;
+    public GameObject KingRoom;
 
     void Start()
     {
@@ -67,12 +75,12 @@ public class MainTaskInteraction : MonoBehaviour
             TakeTheMainTaskText.gameObject.SetActive(false);
             MainTask4Panel.SetActive(true);
         }
-        if (TeleportText.gameObject.activeSelf && MainTask5.gameObject.activeSelf && Input.GetKeyDown(KeyCode.C))
+        if (TeleportText.gameObject.activeSelf && (MainTask5.gameObject.activeSelf || MainTask13.gameObject.activeSelf) && Input.GetKeyDown(KeyCode.C))
         {
             TeleportText.gameObject.SetActive(false);
             Teleport();
         }
-        if (TeleportText.gameObject.activeSelf && (MainTask6.gameObject.activeSelf || MainTask10.gameObject.activeSelf || MainTask12.gameObject.activeSelf) && Input.GetKeyDown(KeyCode.C))
+        if (TeleportText.gameObject.activeSelf && (MainTask6.gameObject.activeSelf || MainTask10.gameObject.activeSelf || MainTask12.gameObject.activeSelf || MainTask14.gameObject.activeSelf) && Input.GetKeyDown(KeyCode.C))
         {
             TeleportText.gameObject.SetActive(false);
             KingVillageTeleport();
@@ -152,6 +160,28 @@ public class MainTaskInteraction : MonoBehaviour
         {
             TakeTheMainTaskText.gameObject.SetActive(false);
             MainTask12Panel.gameObject.SetActive(true);
+        }
+        if (TakeTheMainTaskText.gameObject.activeSelf && MainTask13.gameObject.activeSelf && Input.GetKey(KeyCode.E))
+        {
+            TakeTheMainTaskText.gameObject.SetActive(false);
+            MainTask13Panel.SetActive(true);
+        }
+        if (TakeTheMainTaskText.gameObject.activeSelf && MainTask14.gameObject.activeSelf && Input.GetKey(KeyCode.E))
+        {
+            TakeTheMainTaskText.gameObject.SetActive(false);
+            MainTask14Panel.SetActive(true);
+        }
+        if (KingText.gameObject.activeSelf && MainTask15.gameObject.activeSelf && Input.GetKey(KeyCode.E))
+        {
+            MainTask15.gameObject.SetActive(false);
+            KingText.gameObject.SetActive(false);
+            KillCanvas.gameObject.SetActive(true);
+        }
+        if (KingText.gameObject.activeSelf && MainTask15.gameObject.activeSelf && Input.GetKey(KeyCode.C))
+        {
+            MainTask15.gameObject.SetActive(false);
+            KingText.gameObject.SetActive(false);
+            ForgiveCanvas.gameObject.SetActive(true);
         }
         if (MainTask1Panel.activeSelf && Input.GetKeyDown(KeyCode.F))
         {
@@ -247,6 +277,25 @@ public class MainTaskInteraction : MonoBehaviour
             currentTask = 12;
             SaveProgress();
         }
+        if (MainTask13Panel.activeSelf && Input.GetKey(KeyCode.F))
+        {
+            MainTask13Panel.SetActive(false);
+            MainTask13.gameObject.SetActive(false);
+            MainTask14.gameObject.SetActive(true);
+            currentTask = 13;
+            SaveProgress();
+        }
+        if (MainTask14Panel.activeSelf && Input.GetKey(KeyCode.F))
+        {
+            MainTask14Panel.SetActive(false);
+            MainTask14.gameObject.SetActive(false);
+            MainTask15.gameObject.SetActive(true);
+            KingRoom.SetActive(true);
+            KingText.gameObject.SetActive(true);
+            KingRoomTeleport();
+            currentTask = 14;
+            SaveProgress();
+        }
         if (Input.GetKeyDown(KeyCode.X))
         {
             ResetProgress();
@@ -263,11 +312,11 @@ public class MainTaskInteraction : MonoBehaviour
         {
             TakeTheMainTaskText.gameObject.SetActive(true);
         }
-        if (MainTask5.gameObject.activeSelf && other.gameObject.CompareTag("Old"))
+        if ((MainTask5.gameObject.activeSelf || MainTask13.gameObject.activeSelf) && other.gameObject.CompareTag("Old"))
         {
             TakeTheMainTaskText.gameObject.SetActive(true);
         }
-        if (MainTask5.gameObject.activeSelf && other.gameObject.CompareTag("SnowVillage"))
+        if ((MainTask5.gameObject.activeSelf || MainTask13.gameObject.activeSelf) && other.gameObject.CompareTag("SnowVillage"))
         {
             TeleportText.gameObject.SetActive(true);
         }
@@ -292,6 +341,10 @@ public class MainTaskInteraction : MonoBehaviour
             GateText.gameObject.SetActive(true);
         }
         if (MainTask12.gameObject.activeSelf && other.gameObject.CompareTag("OldGuardion"))
+        {
+            TakeTheMainTaskText.gameObject.SetActive(true);
+        }
+        if (MainTask14.gameObject.activeSelf && other.gameObject.CompareTag("KingGuardion"))
         {
             TakeTheMainTaskText.gameObject.SetActive(true);
         }
@@ -330,7 +383,23 @@ public class MainTaskInteraction : MonoBehaviour
             MainTask5.gameObject.SetActive(false);
             MainTask5Panel.SetActive(false);
             MainTask6.gameObject.SetActive(false);
-
+            MainTask6Panel.SetActive(false);
+            MainTask7.gameObject.SetActive(false);
+            MainTask7Panel.SetActive(false);
+            MainTask8.gameObject.SetActive(false);
+            MainTask8Panel.SetActive(false);
+            MainTask9.gameObject.SetActive(false);
+            MainTask9Panel.SetActive(false);
+            MainTask10.gameObject.SetActive(false);
+            MainTask10Panel.SetActive(false);
+            MainTask11.gameObject.SetActive(false);
+            MainTask12.gameObject.SetActive(false);
+            MainTask12Panel.SetActive(false);
+            MainTask13.gameObject.SetActive(false);
+            MainTask13Panel.SetActive(false);
+            MainTask14.gameObject.SetActive(false);
+            MainTask14Panel.SetActive(false);
+            MainTask15.gameObject.SetActive(false);
         }
         else if (taskIndex == 1)
         {
@@ -417,6 +486,20 @@ public class MainTaskInteraction : MonoBehaviour
             MainTask12Panel.SetActive(false);
             MainTask13.gameObject.SetActive(true);
         }
+        else if (taskIndex == 13)
+        {
+            TakeTheMainTaskText.gameObject.SetActive(false);
+            MainTask13.gameObject.SetActive(false);
+            MainTask13Panel.SetActive(false);
+            MainTask14.gameObject.SetActive(true);
+        }
+        else if (taskIndex == 14)
+        {
+            TakeTheMainTaskText.gameObject.SetActive(false);
+            MainTask14.gameObject.SetActive(false);
+            MainTask14Panel.SetActive(false);
+            MainTask15.gameObject.SetActive(true);
+        }
     }
 
     void SaveProgress()
@@ -440,6 +523,10 @@ public class MainTaskInteraction : MonoBehaviour
     void KingVillageTeleport()
     {
         transform.position = new Vector3(-337, 16.2f, -57);
+    }
+    void KingRoomTeleport()
+    {
+        transform.position = new Vector3(-346, 24.4f, -80);
     }
     void UpdateGoldUI(int goldAmount)
     {
