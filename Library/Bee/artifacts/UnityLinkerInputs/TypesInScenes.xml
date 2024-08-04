@@ -2,8 +2,10 @@
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="CameraController" preserve="nothing"/>
 		<type fullname="MainTaskInteraction" preserve="nothing"/>
+		<type fullname="MenuManager" preserve="nothing"/>
 		<type fullname="PlayerInteraction" preserve="nothing"/>
 		<type fullname="PlayerMovement" preserve="nothing"/>
+		<type fullname="VolumeControl" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro">
 		<type fullname="TMPro.TMP_FontAsset" preserve="nothing"/>
@@ -25,8 +27,11 @@
 		<type fullname="UnityEditor.VFXManager" preserve="nothing"/>
 		<type fullname="UnityEngine.AnimationClip" preserve="nothing"/>
 		<type fullname="UnityEngine.Animator" preserve="nothing"/>
+		<type fullname="UnityEngine.Audio.AudioResource" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioBehaviour" preserve="nothing"/>
+		<type fullname="UnityEngine.AudioClip" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioListener" preserve="nothing"/>
+		<type fullname="UnityEngine.AudioSource" preserve="nothing"/>
 		<type fullname="UnityEngine.Avatar" preserve="nothing"/>
 		<type fullname="UnityEngine.Behaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.BoxCollider" preserve="nothing"/>

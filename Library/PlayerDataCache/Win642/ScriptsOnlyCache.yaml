@@ -3,8 +3,10 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - CameraController
     - MainTaskInteraction
+    - MenuManager
     - PlayerInteraction
     - PlayerMovement
+    - VolumeControl
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
@@ -17,13 +19,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
@@ -83,8 +78,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
@@ -92,6 +85,10 @@ ScriptsOnlyBuild:
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -106,35 +103,29 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 24510}
+      Script: {instanceID: 24594}
     - Class: 114
-      Script: {instanceID: 24946}
+      Script: {instanceID: 25636}
     - Class: 114
-      Script: {instanceID: 25538}
+      Script: {instanceID: 25782}
     - Class: 114
-      Script: {instanceID: 25684}
+      Script: {instanceID: 26056}
     - Class: 114
-      Script: {instanceID: 25956}
+      Script: {instanceID: 26248}
     - Class: 114
-      Script: {instanceID: 26146}
+      Script: {instanceID: 27020}
     - Class: 114
-      Script: {instanceID: 26912}
+      Script: {instanceID: 27802}
     - Class: 114
-      Script: {instanceID: 27680}
+      Script: {instanceID: 28590}
     - Class: 114
-      Script: {instanceID: 28240}
+      Script: {instanceID: 29196}
     - Class: 114
-      Script: {instanceID: 28462}
+      Script: {instanceID: 29340}
     - Class: 114
-      Script: {instanceID: 29062}
+      Script: {instanceID: 29578}
     - Class: 114
-      Script: {instanceID: 29204}
-    - Class: 114
-      Script: {instanceID: 29206}
-    - Class: 114
-      Script: {instanceID: 29262}
-    - Class: 114
-      Script: {instanceID: 29592}
+      Script: {instanceID: 29734}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -154,6 +145,71 @@ ScriptsOnlyBuild:
     - Class: 199
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/MenuScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 24594}
+    - Class: 114
+      Script: {instanceID: 25036}
+    - Class: 114
+      Script: {instanceID: 26056}
+    - Class: 114
+      Script: {instanceID: 26248}
+    - Class: 114
+      Script: {instanceID: 27252}
+    - Class: 114
+      Script: {instanceID: 27802}
+    - Class: 114
+      Script: {instanceID: 28364}
+    - Class: 114
+      Script: {instanceID: 28590}
+    - Class: 114
+      Script: {instanceID: 29196}
+    - Class: 114
+      Script: {instanceID: 29342}
+    - Class: 114
+      Script: {instanceID: 29398}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -506,7 +562,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: cb5467a48950b3d701f08b9ee01d6b47
+      Hash: 92cf59974ac33d57036aa03366df1011
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerInteraction
@@ -558,6 +614,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseDownMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: b653d92cb8fce9fad1577ee38ba6d5e1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MenuManager
   - hash:
       serializedVersion: 2
       Hash: 7e9cad7f71f9cc52f699bbd2d2a75734
@@ -884,6 +946,12 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: a10f4cfdc57cfba6efb83cee51e5a93b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: VolumeControl
+  - hash:
+      serializedVersion: 2
       Hash: 43ebd945b04bced376c791411cf5a289
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -968,5 +1036,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 19
   scenePathNames:
+  - Assets/Scenes/MenuScene.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: "C:/Users/izzet/OneDrive/Masa\xFCst\xFC/BuildDeneme/Deneme6/RevengeOfHonor.exe"
+  playerPath: "C:/Users/izzet/OneDrive/Masa\xFCst\xFC/BuildDeneme/Deneme8/RevengeOfHonor.exe"

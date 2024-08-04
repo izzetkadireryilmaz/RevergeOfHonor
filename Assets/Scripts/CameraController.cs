@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
@@ -9,6 +10,10 @@ public class CameraController : MonoBehaviour
     public float cameraVerticalRotation = 0f;
     public float cameraHorizontalRotation = 0f;
 
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
     void Update()
     {
         // kamera deðerinin ayarladýðýmýz mouse hassasiyeti ile hareket etmesini saðlýyoruz.
@@ -23,4 +28,5 @@ public class CameraController : MonoBehaviour
         // kameranýn yatay hareketi için karakterin dönmesini saðlýyoruz.
         Player.Rotate(Vector3.up * inputX);
     }
+
 }

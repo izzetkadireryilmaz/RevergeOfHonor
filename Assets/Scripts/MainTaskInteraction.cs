@@ -224,6 +224,7 @@ public class MainTaskInteraction : MonoBehaviour
             MainTask5Panel.SetActive(false);
             MainTask5.gameObject.SetActive(false);
             MainTask6.gameObject.SetActive(true);
+            MainVillageTeleport();
             currentTask = 5;
             SaveProgress();
         }
@@ -232,6 +233,7 @@ public class MainTaskInteraction : MonoBehaviour
             MainTask6Panel.SetActive(false);
             MainTask6.gameObject.SetActive(false);
             MainTask7.gameObject.SetActive(true);
+            MainVillageTeleport();
             currentTask = 6;
             SaveProgress();
         }
@@ -266,6 +268,7 @@ public class MainTaskInteraction : MonoBehaviour
             MainTask10Panel.SetActive(false);
             MainTask10.gameObject.SetActive(false);
             MainTask11.gameObject.SetActive(true);
+            MainVillageTeleport();
             currentTask = 10;
             SaveProgress();
         }
@@ -282,6 +285,7 @@ public class MainTaskInteraction : MonoBehaviour
             MainTask13Panel.SetActive(false);
             MainTask13.gameObject.SetActive(false);
             MainTask14.gameObject.SetActive(true);
+            MainVillageTeleport();
             currentTask = 13;
             SaveProgress();
         }
@@ -351,11 +355,12 @@ public class MainTaskInteraction : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Elf") || other.gameObject.CompareTag("Mayor") || other.gameObject.CompareTag("Old") || other.gameObject.CompareTag("SnowVillage") || other.gameObject.CompareTag("KingVillageTeleport") || other.gameObject.CompareTag("VillageGuardion") || other.gameObject.CompareTag("KingVillager") || other.gameObject.CompareTag("NewGuardion"))
+        if (other.gameObject.CompareTag("Elf") || other.gameObject.CompareTag("Mayor") || other.gameObject.CompareTag("Old") || other.gameObject.CompareTag("SnowVillage") || other.gameObject.CompareTag("KingVillageTeleport") || other.gameObject.CompareTag("VillageGuardion") || other.gameObject.CompareTag("KingVillager") || other.gameObject.CompareTag("NewGuardion") || other.gameObject.CompareTag("OldGuardion") || other.gameObject.CompareTag("KingGuardion"))
         {
             TakeTheMainTaskText.gameObject.SetActive(false);
             TeleportText.gameObject.SetActive(false);
             BribeText.gameObject.SetActive(false);
+            GateText.gameObject.SetActive(false);
             MainTask1Panel.SetActive(false);
             MainTask2Panel.SetActive(false);
             MainTask4Panel.SetActive(false);
@@ -364,6 +369,10 @@ public class MainTaskInteraction : MonoBehaviour
             MainTask7Panel.SetActive(false);
             MainTask8Panel.SetActive(false);
             MainTask9Panel.SetActive(false);
+            MainTask10Panel.SetActive(false);
+            MainTask12Panel.SetActive(false);
+            MainTask13Panel.SetActive(false);
+            MainTask14Panel.SetActive(false);
         }
     }
 
@@ -421,6 +430,7 @@ public class MainTaskInteraction : MonoBehaviour
             TakeTheMainTaskText.gameObject.SetActive(false);
             MainTask3.gameObject.SetActive(false);
             MainTask4.gameObject.SetActive(true);
+            RoadSign.SetActive(true);
         }
         else if (taskIndex == 4)
         {
@@ -428,6 +438,7 @@ public class MainTaskInteraction : MonoBehaviour
             MainTask4.gameObject.SetActive(false);
             MainTask4Panel.SetActive(false);
             MainTask5.gameObject.SetActive(true);
+            RoadSign.SetActive(true);
         }
         else if (taskIndex == 5)
         {
@@ -435,6 +446,7 @@ public class MainTaskInteraction : MonoBehaviour
             MainTask5.gameObject.SetActive(false);
             MainTask5Panel.SetActive(false);
             MainTask6.gameObject.SetActive(true);
+            RoadSign.SetActive(true);
         }
         else if (taskIndex == 6)
         {
@@ -442,6 +454,7 @@ public class MainTaskInteraction : MonoBehaviour
             MainTask6.gameObject.SetActive(false);
             MainTask6Panel.SetActive(false);
             MainTask7.gameObject.SetActive(true);
+            RoadSign.SetActive(true);
         }
         else if (taskIndex == 7)
         {
@@ -449,6 +462,7 @@ public class MainTaskInteraction : MonoBehaviour
             MainTask7.gameObject.SetActive(false);
             MainTask7Panel.SetActive(false);
             MainTask8.gameObject.SetActive(true);
+            RoadSign.SetActive(true);
         }
         else if (taskIndex == 8)
         {
@@ -457,6 +471,7 @@ public class MainTaskInteraction : MonoBehaviour
             MainTask8Panel.SetActive(false);
             MainTask9.gameObject.SetActive(true);
             NewGuardion.SetActive(true);
+            RoadSign.SetActive(true);
         }
         else if (taskIndex == 9)
         {
@@ -465,6 +480,7 @@ public class MainTaskInteraction : MonoBehaviour
             MainTask9Panel.SetActive(false);
             MainTask10.gameObject.SetActive(true);
             NewGuardion.SetActive(false);
+            RoadSign.SetActive(true);
         }
         else if (taskIndex == 10)
         {
@@ -472,12 +488,14 @@ public class MainTaskInteraction : MonoBehaviour
             MainTask10.gameObject.SetActive(false);
             MainTask10Panel.SetActive(false);
             MainTask11.gameObject.SetActive(true);
+            RoadSign.SetActive(true);
         }
         else if (taskIndex == 11)
         {
             TakeTheMainTaskText.gameObject.SetActive(false);
             MainTask11.gameObject.SetActive(false);
             MainTask12.gameObject.SetActive(true);
+            RoadSign.SetActive(true);
         }
         else if (taskIndex == 12)
         {
@@ -485,6 +503,7 @@ public class MainTaskInteraction : MonoBehaviour
             MainTask12.gameObject.SetActive(false);
             MainTask12Panel.SetActive(false);
             MainTask13.gameObject.SetActive(true);
+            RoadSign.SetActive(true);
         }
         else if (taskIndex == 13)
         {
@@ -492,6 +511,7 @@ public class MainTaskInteraction : MonoBehaviour
             MainTask13.gameObject.SetActive(false);
             MainTask13Panel.SetActive(false);
             MainTask14.gameObject.SetActive(true);
+            RoadSign.SetActive(true);
         }
         else if (taskIndex == 14)
         {
@@ -499,6 +519,7 @@ public class MainTaskInteraction : MonoBehaviour
             MainTask14.gameObject.SetActive(false);
             MainTask14Panel.SetActive(false);
             MainTask15.gameObject.SetActive(true);
+            RoadSign.SetActive(true);
         }
     }
 
@@ -517,16 +538,19 @@ public class MainTaskInteraction : MonoBehaviour
     }
     void Teleport()
     {
-        // GameObject'in konumunu (46, 8.6, -82) konumuna taþý
         transform.position = new Vector3(46, 8.6f, -82);
     }
     void KingVillageTeleport()
     {
-        transform.position = new Vector3(-337, 16.2f, -57);
+        transform.position = new Vector3(-337, 17.4f, -57);
     }
     void KingRoomTeleport()
     {
         transform.position = new Vector3(-346, 24.4f, -80);
+    }
+    void MainVillageTeleport()
+    {
+        transform.position = new Vector3(-1.4f, 1, -14);
     }
     void UpdateGoldUI(int goldAmount)
     {

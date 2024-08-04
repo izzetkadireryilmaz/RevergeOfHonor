@@ -28,7 +28,8 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -37,7 +38,8 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -53,13 +55,21 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "MainTaskInteraction",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "MenuManager",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -76,7 +86,8 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -92,7 +103,8 @@
             "fullManagedTypeName": "",
             "moduleName": "AI",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -171,7 +183,8 @@
             "fullManagedTypeName": "UnityEditor.Animations.AnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -201,7 +214,8 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -252,7 +266,8 @@
             "fullManagedTypeName": "UnityEngine.AnimationClip",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -260,6 +275,25 @@
             "nativeClass": "Animator",
             "fullManagedTypeName": "UnityEngine.Animator",
             "moduleName": "Animation",
+            "usedInScenes": [
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AudioResource",
+            "fullManagedTypeName": "UnityEngine.Audio.AudioResource",
+            "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Scenes/GameScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "SampleClip",
+            "fullManagedTypeName": "UnityEngine.Audio.AudioResource",
+            "moduleName": "Audio",
             "usedInScenes": [
                 "Assets/Scenes/GameScene.unity"
             ]
@@ -270,6 +304,16 @@
             "fullManagedTypeName": "UnityEngine.AudioBehaviour",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AudioClip",
+            "fullManagedTypeName": "UnityEngine.AudioClip",
+            "moduleName": "Audio",
+            "usedInScenes": [
                 "Assets/Scenes/GameScene.unity"
             ]
         },
@@ -277,6 +321,16 @@
             "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "AudioListener",
             "fullManagedTypeName": "UnityEngine.AudioListener",
+            "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AudioSource",
+            "fullManagedTypeName": "UnityEngine.AudioSource",
             "moduleName": "Audio",
             "usedInScenes": [
                 "Assets/Scenes/GameScene.unity"
@@ -297,7 +351,8 @@
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -315,7 +370,8 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -324,7 +380,8 @@
             "fullManagedTypeName": "UnityEngine.Canvas",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -333,7 +390,8 @@
             "fullManagedTypeName": "UnityEngine.CanvasRenderer",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -369,7 +427,8 @@
             "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -378,7 +437,8 @@
             "fullManagedTypeName": "UnityEngine.Cubemap",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -401,7 +461,8 @@
             "fullManagedTypeName": "UnityEngine.Font",
             "moduleName": "TextRendering",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -410,7 +471,8 @@
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -419,7 +481,8 @@
             "fullManagedTypeName": "UnityEngine.Light",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -428,7 +491,8 @@
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -437,7 +501,8 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -482,7 +547,8 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -491,7 +557,8 @@
             "fullManagedTypeName": "UnityEngine.Motion",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -500,7 +567,8 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -534,7 +602,8 @@
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -559,7 +628,8 @@
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -568,7 +638,8 @@
             "fullManagedTypeName": "UnityEngine.RuntimeAnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -577,7 +648,8 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -604,7 +676,8 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -613,7 +686,8 @@
             "fullManagedTypeName": "UnityEngine.Texture",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -622,7 +696,8 @@
             "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -631,7 +706,8 @@
             "fullManagedTypeName": "UnityEngine.Transform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScene.unity"
+                "Assets/Scenes/GameScene.unity",
+                "Assets/Scenes/MenuScene.unity"
             ]
         },
         {
@@ -666,6 +742,13 @@
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.Text",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "VolumeControl",
             "moduleName": "",
             "usedInScenes": []
         }

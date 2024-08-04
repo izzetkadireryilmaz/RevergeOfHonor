@@ -33,7 +33,7 @@ public class PlayerInteraction : MonoBehaviour
     public Text GreenFeedBack;
     public Text RedFeedBack;
     public Text CheeseFeedBack;
-
+    public GameObject InfoPanel;
 
 
     void Start()
@@ -58,6 +58,18 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
+        if ( Input.GetKeyDown(KeyCode.B))
+        {
+            if (InfoPanel.activeSelf)
+            {
+                InfoPanel.SetActive(false);
+            }
+            else
+            {
+                InfoPanel.SetActive(true);
+            }
+        }
+
         // Görev alma
         if ((tasktemas == true) && Input.GetKeyDown(KeyCode.E))
         {
